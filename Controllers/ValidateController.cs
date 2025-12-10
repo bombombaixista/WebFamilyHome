@@ -7,7 +7,7 @@ namespace WebFamilyHome.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            // 👉 Renderiza a View (Views/Validate/Index.cshtml)
+            // Renderiza a tela de validação (Views/Validate/Index.cshtml)
             return View();
         }
 
@@ -17,7 +17,7 @@ namespace WebFamilyHome.Controllers
             if (token == "minha_chave_secreta")
             {
                 // ✅ Token válido → redireciona para o Kanban
-                return Redirect("https://kanban-seuapp.com/Home/Index");
+                return RedirectToAction("Index", "Home");
             }
             else
             {
