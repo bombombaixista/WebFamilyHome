@@ -1,22 +1,72 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Reset básico */
 body {
-  margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
+
+/* Cabeçalho */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Botões customizados */
+.btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+
+/* Tabelas */
+.table {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    .table th {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .table td, .table th {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+/* Cards da Home */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
